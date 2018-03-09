@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+//    return view('welcome');
 });
+
+Route::get('/search_table','SearchTableController@tableSearch');
+
+

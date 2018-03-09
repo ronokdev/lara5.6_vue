@@ -13784,7 +13784,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-module.exports = __webpack_require__(42);
+module.exports = __webpack_require__(43);
 
 
 /***/ }),
@@ -13808,7 +13808,7 @@ window.Vue = __webpack_require__(36);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('component_v1', __webpack_require__(47));
+Vue.component('component_v1', __webpack_require__(39));
 
 var app = new Vue({
   el: '#app'
@@ -46874,7 +46874,53 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(6)))
 
 /***/ }),
-/* 39 */,
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(40)
+/* script */
+var __vue_script__ = __webpack_require__(41)
+/* template */
+var __vue_template__ = __webpack_require__(42)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\TestComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-b0ceddb8", Component.options)
+  } else {
+    hotAPI.reload("data-v-b0ceddb8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 40 */
 /***/ (function(module, exports) {
 
@@ -46984,96 +47030,114 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 41 */,
-/* 42 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(40)
-/* script */
-var __vue_script__ = __webpack_require__(49)
-/* template */
-var __vue_template__ = __webpack_require__(48)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\TestComponent.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-b0ceddb8", Component.options)
-  } else {
-    hotAPI.reload("data-v-b0ceddb8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("This is vue Test Component")])])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-b0ceddb8", module.exports)
-  }
-}
-
-/***/ }),
-/* 49 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -47094,6 +47158,267 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     }
 });
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("section", { attrs: { id: "main-content" } }, [
+        _c("section", { staticClass: "wrapper" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-12" }, [
+              _c("section", { staticClass: "panel" }, [
+                _c("header", { staticClass: "panel-heading" }, [
+                  _vm._v(
+                    "\n                                    Dynamic Table\n                                    "
+                  ),
+                  _c("span", { staticClass: "tools pull-right" }, [
+                    _c("a", {
+                      staticClass: "fa fa-chevron-down",
+                      attrs: { href: "javascript:;" }
+                    }),
+                    _vm._v(" "),
+                    _c("a", {
+                      staticClass: "fa fa-cog",
+                      attrs: { href: "javascript:;" }
+                    }),
+                    _vm._v(" "),
+                    _c("a", {
+                      staticClass: "fa fa-times",
+                      attrs: { href: "javascript:;" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "panel-body" }, [
+                  _c("div", { staticClass: "adv-table" }, [
+                    _c(
+                      "table",
+                      {
+                        staticClass:
+                          "display table table-bordered table-striped",
+                        attrs: { id: "dynamic-table" }
+                      },
+                      [
+                        _c("thead", [
+                          _c("tr", [
+                            _c("th", [_vm._v("Rendering engine")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Browser")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Platform(s)")]),
+                            _vm._v(" "),
+                            _c("th", { staticClass: "hidden-phone" }, [
+                              _vm._v("Engine version")
+                            ]),
+                            _vm._v(" "),
+                            _c("th", { staticClass: "hidden-phone" }, [
+                              _vm._v("CSS grade")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tbody", [
+                          _c("tr", { staticClass: "gradeX" }, [
+                            _c("td", [_vm._v("Trident")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Internet\n                                                    Explorer 4.0"
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win 95+")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("4")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("X")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeC" }, [
+                            _c("td", [_vm._v("Trident")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Internet\n                                                    Explorer 5.0"
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win 95+")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("5")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("C")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeA" }, [
+                            _c("td", [_vm._v("Trident")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Internet\n                                                    Explorer 5.5"
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win 95+")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("5.5")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("A")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeA" }, [
+                            _c("td", [_vm._v("Trident")]),
+                            _vm._v(" "),
+                            _c("td", [
+                              _vm._v(
+                                "Internet\n                                                    Explorer 6"
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win 98+")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("6")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("A")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeA" }, [
+                            _c("td", [_vm._v("Trident")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Internet Explorer 7")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win XP SP2+")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("7")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("A")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeA" }, [
+                            _c("td", [_vm._v("Trident")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("AOL browser (AOL desktop)")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win XP")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("6")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("A")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeA" }, [
+                            _c("td", [_vm._v("Gecko")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Firefox 1.0")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("Win 98+ / OSX.2+")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("1.7")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("A")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("tr", { staticClass: "gradeU" }, [
+                            _c("td", [_vm._v("Other browsers")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("All others")]),
+                            _vm._v(" "),
+                            _c("td", [_vm._v("-")]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("-")
+                            ]),
+                            _vm._v(" "),
+                            _c("td", { staticClass: "center hidden-phone" }, [
+                              _vm._v("U")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tfoot", [
+                          _c("tr", [
+                            _c("th", [_vm._v("Rendering engine")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Browser")]),
+                            _vm._v(" "),
+                            _c("th", [_vm._v("Platform(s)")]),
+                            _vm._v(" "),
+                            _c("th", { staticClass: "hidden-phone" }, [
+                              _vm._v("Engine version")
+                            ]),
+                            _vm._v(" "),
+                            _c("th", { staticClass: "hidden-phone" }, [
+                              _vm._v("CSS grade")
+                            ])
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-b0ceddb8", module.exports)
+  }
+}
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
