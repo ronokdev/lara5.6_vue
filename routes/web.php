@@ -13,8 +13,10 @@
 
 Route::get('/', function () {
 //    return view('welcome');
+    return("BUGG OFF");
 });
 
 Route::get('/search_table','SearchTableController@tableSearch');
+Route::get('/testing','SearchTableController@testing');
 
 

@@ -9,4 +9,8 @@ class SearchTableController extends Controller
     public function tableSearch(){
         return view('table_search');
     }
+
+    public function testing(){
+        return view('test.test');
+    }
 }

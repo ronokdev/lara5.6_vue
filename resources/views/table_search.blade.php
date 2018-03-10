@@ -387,10 +387,15 @@
                 </aside>
 
                 <section id="app">
-                    <component_v1>
+                    {{--<component_v1>--}}
 
-                    </component_v1>
+                    {{--</component_v1>--}}
+                    {{--<component_v2></component_v2>--}}
+                    @yield('content');
                 </section>
+
+
+
                 <!--right sidebar start-->
                 <div class="right-sidebar">
                     <div class="search-row">
